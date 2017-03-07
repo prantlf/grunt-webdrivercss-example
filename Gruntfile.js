@@ -42,10 +42,24 @@ module.exports = function(grunt) {
                     }
 	            }
 	        }
-	    }
+	    },
+		webdrivercssreport: {
+			test: {
+				options: {
+					template: 'template.tpl',
+					indexPath: '',
+					failuresPath: 'screenshots/fails'
+				},
+				files: {
+					'baseline': ['screenshots/reference/**'],
+					'failures': ['screenshots/fails/**']
+				}
+			}
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-webdriver');
+	grunt.loadNpmTasks('grunt-webdrivercssreport');
 	grunt.loadNpmTasks('grunt-selenium-standalone');
 
 	grunt.registerTask('test', 'Run visual regression tests.', [
