@@ -6,7 +6,7 @@ describe('Homepage',function() {
     it('header should look the same',function(done) {
         browser
             //.sync()
-            .url('https://github.com/chris-gunawardena/grunt-webdrivercss-example')
+            .url('https://github.com/prantlf/grunt-webdrivercss-example')
             .webdrivercss('github', {
                 name: 'header',
                 elem: '.pagehead'

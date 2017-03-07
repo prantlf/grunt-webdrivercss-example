@@ -11,7 +11,7 @@
     OSX:     brew install graphicsmagick
     Windows: http://www.graphicsmagick.org/download.html
 
-5. Run `git clone https://github.com/chris-gunawardena/grunt-webdrivercss-example` to clone this project.
+5. Run `git clone https://github.com/prantlf/grunt-webdrivercss-example` to clone this project.
 6. Run `cd grunt-webdrivercss-example` to change current directory to the project root.
 7. Run `npm install` from the project root. You may want to send it to the background.
 8. Run `grunt test` from the project root.
